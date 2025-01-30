@@ -1,0 +1,351 @@
+/* Algemene instellingen voor containers */
+.container-fluid, .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Navbar en navigatie-instellingen */
+.navbar {
+    padding: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: white;
+}
+
+#navbarNavDropdown {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoklasse {
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+/* Navigatielinks en hover-effecten */
+.nav-link {
+    margin: 10px;
+    color: black;
+}
+
+.nav-link:hover {
+    color: #006cec;
+}
+
+.dropdown-item {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.dropdown-item:hover {
+    color: #006cec;
+    background-color: transparent;
+}
+
+/* Buttons */
+.offertebtn, .offertebtn2 {
+    color: #006cec;
+    font-weight: 500;
+    font-size: large;
+    background-color: #006cec;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.offertebtn {
+    border-color: #006cec;
+    margin-right: 30px;
+}
+
+.offertebtn:hover {
+    background-color: black;
+}
+
+.offertebtn2 {
+    border-radius: 0%;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offertebtn2:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Achtergrond en layout voor secties */
+.bg-dark {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(19, 96, 185, 0.548) 100%), url(./images/badkamerblauw.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 640px;
+    margin-bottom: 50px;
+}
+
+.py-5 {
+    padding-top: 10rem !important;
+    padding-bottom: 3rem !important;
+    justify-content: flex-start;
+}
+
+/* Typografie en tekstinstellingen */
+.fs-5 {
+    color: white;
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Featurette styling */
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+/* Standaard flexbox en layout instellingen */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+/* Pictogrammen styling */
+.bi-check-circle-fill, .bi-pin-map-fill, .bi-phone-fill, .bi-globe {
+    color: #006cec;
+}
+
+.bi-instagram {
+    margin-right: 15px;
+    color: #FFC0CB;
+    font-weight: bolder;
+}
+
+.bi-facebook {
+    margin-right: 15px;
+    color: #3b5998;
+    font-weight: bolder;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #f5f5f5;
+}
+
+.container-footer {
+    background-color: #737373;
+}
+
+#footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerklasse {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.footerklasse .row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.nawklasse {
+    margin-left: 15px;
+}
+
+ul.nav.flex-column {
+    padding-left: 0;
+}
+
+ul.nav.flex-column .nav-item {
+    list-style-type: none;
+}
+
+ul.nav.flex-column .nav-link {
+    color: #343a40;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ul.nav.flex-column .nav-link:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .footerklasse .row > div {
+        text-align: center;
+    }
+  
+    .nawklasse {
+        margin-left: 0;
+    }
+}
+
+/* Layout instellingen voor verschillende secties */
+.divider1 {
+    padding-left: 20px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.featurette2 {
+    padding-right: 20px;
+    margin-top: 75px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pricingk {
+    margin-top: 75px;
+}
+
+.marketing {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+/* Card styling */
+.card-body .fw-light {
+    font-size: 14px;
+}
+
+/* Specifieke secties zoals badkamer, stukadoor, schilder */
+.badkamerklas .h-100 {
+    background-image: url(images/badkamervaag.png);
+}
+
+.stukadoorklas .h-100 {
+    background-image: url(images/stukadoorvaag.png);
+}
+
+.schilderklas .h-100 {
+    background-image: url(images/schilderwerk2.png);
+}
+
+/* Media queries voor mobiele weergave */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .offertebtn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .bg-dark {
+        padding: 20px 15px;
+    }
+
+    h1.display-5 {
+        font-size: 2.5rem;
+    }
+
+    .featurette1 .col-md-7, .featurette2 .col-md-7 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .featurette1 .col-md-5, .featurette2 .col-md-5 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .featurette1 img, .featurette2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .col-lg-4 h2 {
+        font-size: 1.5rem;
+    }
+
+    .col-lg-4 p {
+        font-size: 1rem;
+    }
+
+    .footerklasse {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footerklasse .col-lg-3, .footerklasse .col-md-2 {
+        margin-bottom: 20px;
+    }
+
+    .footerklasse h5 {
+        font-size: 1.2rem;
+    }
+
+    .footerklasse ul {
+        padding-left: 0;
+    }
+
+    .footerklasse ul li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra line-height en font-weight instellingen */
+.lh-1 {
+    line-height: 1 !important;
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}
+.testimonial{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+                       
+}
